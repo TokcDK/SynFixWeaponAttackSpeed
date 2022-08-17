@@ -39,7 +39,7 @@ namespace SynFixWeaponAttackSpeed
                     if (spell == null) spell = state.PatchMod.Spells.GetOrAddAsOverride(spellGetter);
 
                     var effectData = spell.Effects[effectIndex].Data!;
-                    var fixedMagnitude = (float)effectData.Magnitude - (float)1.0;
+                    var fixedMagnitude = effectData.Magnitude - 1.0F;
                     Console.WriteLine($"Fix magic effect {spellGetter.FormKey.ModKey}/{spellGetter.EditorID}/{magicEffectGetter.EditorID}, magnitude: {effectData.Magnitude}, new: {fixedMagnitude.ToString("0.##")}");
                     effectData.Magnitude = fixedMagnitude;
 
