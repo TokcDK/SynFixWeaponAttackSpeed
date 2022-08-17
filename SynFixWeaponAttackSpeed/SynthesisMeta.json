@@ -1,0 +1,9 @@
+{
+  "Nickname": "",
+  "Visibility": "Visible",
+  "OneLineDescription": "Fixes weapon attack speed bug",
+  "LongDescription": "It changes all effects magnitude which changing weapon speed mult value and add to all exist races ability to se base mult to 1\nIn result we get 1.0 base mult+stackable 0.# mult by magic effects",
+  "PreferredAutoVersioning": "Default",
+  "RequiredMods": [],
+  "TargetedReleases": []
+}
